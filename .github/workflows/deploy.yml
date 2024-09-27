@@ -23,7 +23,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t jpcaglianone/notifications-service:latest .  # Use seu nome de usuário e nome do aplicativo
+          docker build -t jpcaglianone/notifications-service:latest .  
 
       - name: Log in to Docker Hub
         env:
@@ -33,7 +33,7 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push jpcaglianone/notifications-service:latest  # Use seu nome de usuário e nome do aplicativo
+          docker push jpcaglianone/notifications-service:latest 
 
   deploy:
     runs-on: ubuntu-latest
